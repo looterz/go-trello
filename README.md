@@ -25,7 +25,7 @@ func main() {
 	// New Trello Client
 	appKey := "application-key"
 	token := "token"
-	trello, err := trello.NewAuthClient(appKey, &token)
+	trello, err := trello.NewAuthClient(appKey, token)
 	if err != nil {
 		log.Fatal(err)
 	}
